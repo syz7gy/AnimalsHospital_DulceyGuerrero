@@ -3,17 +3,18 @@ package co.edu.unbosque.model;
 public class AnimalDTO {
 	
 	private String name;
-	private int arrivalTime;
-	private boolean blanket;
+	private String species;
+	private int age;
 	
 	public AnimalDTO() {
+		
 	}
-	
-	public AnimalDTO(String name, int arrivalTime, boolean blanket) {
+
+	public AnimalDTO(String name, String species, int age) {
 		super();
 		this.name = name;
-		this.arrivalTime = arrivalTime;
-		this.blanket = blanket;
+		this.species = species;
+		this.age = age;
 	}
 
 	public String getName() {
@@ -24,24 +25,30 @@ public class AnimalDTO {
 		this.name = name;
 	}
 
-	public int getArrivalTime() {
-		return arrivalTime;
+	public String getSpecies() {
+		return species;
 	}
 
-	public void setArrivalTime(int arrivalTime) {
-		this.arrivalTime = arrivalTime;
+	public void setSpecies(String species) {
+		this.species = species;
 	}
 
-	public boolean isBlanked() {
-		return blanket;
+	public int getAge() {
+		return age;
 	}
 
-	public void setBlanked(boolean blanket) {
-		this.blanket = blanket;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	@Override
 	public String toString() {
-		return "AnimalsDTO [name=" + name + ", arrivalTime=" + arrivalTime + ", blanket=" + blanket + "]";
+		StringBuilder sb = new StringBuilder();
+		sb.append("\nName: " + name);
+		sb.append("\nSpecies: " + species);
+		sb.append("\nAge: " + age + "\n");
+		return sb.toString();
 	}
+
+	
 }

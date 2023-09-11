@@ -15,7 +15,7 @@ public class StackImpl<T> implements Stack<T>{
     
     @Override
     public T pop() {
-        return infos.removeLast();
+        return infos.removeFirst();
     }
     
     @Override
