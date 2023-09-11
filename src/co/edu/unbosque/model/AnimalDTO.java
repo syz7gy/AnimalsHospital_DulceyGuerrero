@@ -3,14 +3,17 @@ package co.edu.unbosque.model;
 public class AnimalDTO {
 	
 	private String name;
-	private int arriveTime;
-	private boolean blanked;
+	private int arrivalTime;
+	private boolean blanket;
 	
-	public AnimalDTO(String name, int arriveTime, boolean blanked) {
+	public AnimalDTO() {
+	}
+	
+	public AnimalDTO(String name, int arrivalTime, boolean blanket) {
 		super();
 		this.name = name;
-		this.arriveTime = arriveTime;
-		this.blanked = blanked;
+		this.arrivalTime = arrivalTime;
+		this.blanket = blanket;
 	}
 
 	public String getName() {
@@ -21,24 +24,24 @@ public class AnimalDTO {
 		this.name = name;
 	}
 
-	public int getArriveTime() {
-		return arriveTime;
+	public int getArrivalTime() {
+		return arrivalTime;
 	}
 
-	public void setArriveTime(int arriveTime) {
-		this.arriveTime = arriveTime;
+	public void setArrivalTime(int arrivalTime) {
+		this.arrivalTime = arrivalTime;
 	}
 
 	public boolean isBlanked() {
-		return blanked;
+		return blanket;
 	}
 
-	public void setBlanked(boolean blanked) {
-		this.blanked = blanked;
+	public void setBlanked(boolean blanket) {
+		this.blanket = blanket;
 	}
 
 	@Override
 	public String toString() {
-		return "AnimalsDTO [name=" + name + ", arriveTime=" + arriveTime + ", blanked=" + blanked + "]";
+		return "AnimalsDTO [name=" + name + ", arrivalTime=" + arrivalTime + ", blanket=" + blanket + "]";
 	}
 }
