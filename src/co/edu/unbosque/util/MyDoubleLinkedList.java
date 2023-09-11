@@ -1,7 +1,5 @@
 package co.edu.unbosque.util;
 
-import src.co.edu.unbosque.util.DNode;
-
 public class MyDoubleLinkedList<T> {
 	// solo se maneja la posicion 0 y la ultima
 
